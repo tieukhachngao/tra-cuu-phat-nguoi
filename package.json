@@ -1,0 +1,31 @@
+{
+  "name": "tracuuphathnguoi",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsc --watch",
+    "bot": "node dist/telegram-bot.js"
+  },
+  "author": "Loc Pham Quang",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tieukhachngao/tra-cuu-phat-nguoi.git"
+  },
+  "license": "ISC",
+  "description": "Traffic violation lookup API",
+  "dependencies": {
+    "axios": "^1.7.0",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
