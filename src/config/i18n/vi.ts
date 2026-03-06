@@ -27,4 +27,8 @@ export const vi: Messages = {
   langHelp: "Chọn ngôn ngữ: /lang vi hoặc /lang en",
   commandLookup: "Tra cứu vi phạm giao thông bằng biển số xe",
   commandLang: "Chuyển đổi ngôn ngữ (vi/en)",
+  welcome: "Chào mừng bạn đến với Bot Tra Cứu Phạt Nguội!",
+  welcomeDesc: "Gửi biển số xe để tra cứu vi phạm giao thông.\nVí dụ: 30H47465",
+  btnLookup: "Tra cứu vi phạm",
+  btnLang: "Đổi ngôn ngữ",
 };

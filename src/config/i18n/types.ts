@@ -27,4 +27,8 @@ export interface Messages {
   langHelp: string;
   commandLookup: string;
   commandLang: string;
+  welcome: string;
+  welcomeDesc: string;
+  btnLookup: string;
+  btnLang: string;
 }

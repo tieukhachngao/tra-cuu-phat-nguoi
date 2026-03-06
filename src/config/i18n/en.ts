@@ -27,4 +27,8 @@ export const en: Messages = {
   langHelp: "Choose language: /lang vi or /lang en",
   commandLookup: "Look up traffic violations by license plate",
   commandLang: "Switch language (vi/en)",
+  welcome: "Welcome to Traffic Violation Lookup Bot!",
+  welcomeDesc: "Send a license plate to look up traffic violations.\nExample: 30H47465",
+  btnLookup: "Look up violations",
+  btnLang: "Switch language",
 };
