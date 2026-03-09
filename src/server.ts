@@ -109,8 +109,9 @@ if (botToken) {
       return;
     }
     try {
-      await bot!.telegram.setWebhook(`${url}${WEBHOOK_PATH}`);
-      res.json({ ok: true, webhook: `${url}${WEBHOOK_PATH}` });
+      const baseUrl = url.replace(/\/$/, "");
+      await bot!.telegram.setWebhook(`${baseUrl}${WEBHOOK_PATH}`);
+      res.json({ ok: true, webhook: `${baseUrl}${WEBHOOK_PATH}` });
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
       res.status(500).json({ error: message });
