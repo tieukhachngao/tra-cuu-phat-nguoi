@@ -27,3 +27,6 @@ http://localhost:3000/api?licensePlate=12A05699
 ]
 }
 
+curl -X POST "https://api.telegram.org/bot8408792178:AAxxxxxPHlvtAOvSu_bOw6mGCfw/setWebhook" \
+  -H "Content-Type: application/json" \
+  -d '{"url": "https://tra-cuu-phat-nguoi-tau.vercel.app//api/set-webhook?url=https://tra-cuu-phat-nguoi-tau.vercel.app/"}'
