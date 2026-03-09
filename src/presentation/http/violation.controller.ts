@@ -13,7 +13,7 @@ export class ViolationController {
     }
 
     try {
-      const violations = await this.lookupUseCase.execute(licensePlate);
+      const violations = await this.lookupUseCase.execute(licensePlate.toUpperCase());
       if (violations) {
         res.json({ licensePlate, violations });
       } else {

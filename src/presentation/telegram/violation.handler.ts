@@ -73,6 +73,7 @@ export class ViolationHandler {
   constructor(private readonly lookupUseCase: LookupViolationsUseCase) {}
 
   async handleLookup(ctx: ReplyContext, plate: string, userId: number): Promise<void> {
+    plate = plate.toUpperCase();
     const t = getMessages(userId);
     const md = { parse_mode: "MarkdownV2" };
 
