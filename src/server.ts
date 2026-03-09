@@ -32,7 +32,7 @@ if (botToken) {
     { command: "start", description: "Start the bot" },
     { command: "tracuu", description: "Tra cuu / Look up violations" },
     { command: "lang", description: "Switch language (vi/en)" },
-  ]);
+  ]).catch(() => {});
 
   bot.command("start", async (ctx) => {
     const userId = ctx.from.id;
